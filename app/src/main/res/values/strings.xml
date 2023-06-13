@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MindBriz</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="welcome_back_to_mind">WELCOME BACK TO MIND</string>
+    <string name="we_got_you">We got you.</string>
+    <string name="don_t_worry">Don\'t worry!</string>
+    <string name="sign_in">Sign in.</string>
+    <string name="recover_password">Recover Password</string>
+    <string name="recovered_your_password">Recovered your password?</string>
+</resources>

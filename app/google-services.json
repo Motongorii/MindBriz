@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "307360069556",
+    "project_id": "mindbriz-f98d3",
+    "storage_bucket": "mindbriz-f98d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:307360069556:android:a297f174acf2b3a5c864e1",
+        "android_client_info": {
+          "package_name": "com.example.mindbriz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "307360069556-e9ck208vfsj0rl4gh67nkqpicvrsfcbj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArI2vFZHoq5dIgww9Ebt-sH0mWyXATmTI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "307360069556-e9ck208vfsj0rl4gh67nkqpicvrsfcbj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
