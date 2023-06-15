@@ -25,11 +25,7 @@ class SigninActivity : AppCompatActivity(), View.OnClickListener {
         when (view.id) {
             R.id.bSignIn -> Log.i(SigninActivity.Companion.LOG_TAG, "Sign in clicked.")
             R.id.tvForgotPassword -> startActivity(
-                Intent(
-                    this@SigninActivity,
-                    ForgotPasswordActivity::class.java
-                )
-            )
+                Intent(this@SigninActivity, ForgotPasswordActivity::class.java))
 
             R.id.tvSignUp -> startActivity(Intent(this@SigninActivity, RegisterActivity::class.java))
         }
