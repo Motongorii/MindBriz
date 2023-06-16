@@ -8,6 +8,9 @@
     <color name="green">#5df15d</color>
     <color name="orange">#FFB52E</color>
     <color name="red">#FF0000</color>
+    <color name="colorPrimary">#324968</color>
+    <color name="colorPrimaryDark">#324968</color>
+    <color name="colorAccent">#FF4081</color>
 
 
 </resources>
