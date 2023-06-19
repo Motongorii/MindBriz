@@ -13,10 +13,29 @@
         android:theme="@style/Theme.MindBriz"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity2"
-            android:exported="false"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/Theme.MindBriz.NoActionBar" />
+            android:name=".MeditationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AnxietymngActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OCDmngActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AngerManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SuicidePreventionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SelfHarmMngActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StressManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UniversalActivity"
+            android:theme="@style/UniversalTheme" />
         <activity
             android:name=".ForgotPasswordActivity"
             android:exported="false" />
