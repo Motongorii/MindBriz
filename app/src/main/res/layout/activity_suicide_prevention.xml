@@ -3,7 +3,37 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/pink"
     android:layout_height="match_parent"
     tools:context=".SuicidePreventionActivity">
 
+    <EditText
+        android:id="@+id/txtHallo"
+        android:layout_width="224dp"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="#039BE5"
+        tools:layout_editor_absoluteX="171dp"
+        tools:layout_editor_absoluteY="25dp"
+        tools:text="Hello There," />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="160dp"
+        android:layout_height="161dp"
+        app:srcCompat="@drawable/smilesuicide"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="1dp" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="#039BE5"
+        tools:layout_editor_absoluteX="171dp"
+        tools:layout_editor_absoluteY="91dp"
+        tools:text="We are here for you" />
 </androidx.constraintlayout.widget.ConstraintLayout>

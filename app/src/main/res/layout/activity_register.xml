@@ -11,138 +11,103 @@
         android:id="@+id/tvAlmostThere"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="160dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="1dp"
         android:clickable="true"
         android:text="Almost there!"
         android:textColor="@color/dark_blue"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/tvExcited"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvExcited" />
 
     <TextView
         android:id="@+id/tvExcited"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginTop="121dp"
         android:text="We are excited to see you here!"
         android:textColor="@color/dark_blue"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvAlmostThere" />
+        app:layout_constraintEnd_toStartOf="@+id/tilPassword"
+        app:layout_constraintStart_toStartOf="@+id/tvAlmostThere"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilUsername"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="32dp"
         android:textColorHint="#082AFA"
         android:theme="@style/Widget.Design.TextInputLayout"
         app:hintTextColor="#1F37CC"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tilEmail"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvExcited">
+        app:layout_constraintTop_toTopOf="parent">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etUsername"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Username"
-            android:inputType="text"
-            android:maxLines="1"
-            android:textColorHighlight="#3949AB"
-            android:textColorHint="#2842E4" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilEmail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
         android:textColorHint="#1931C3"
         android:theme="@style/Widget.Design.TextInputLayout"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tilUsername">
+        app:layout_constraintTop_toTopOf="parent">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etEmail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Email"
-            android:inputType="textEmailAddress"
-            android:maxLines="1"
-            android:textColorHint="@color/dark_blue" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginEnd="16dp"
         android:textColorHint="#233AC5"
         android:theme="@style/Widget.Design.TextInputLayout"
+        app:layout_constraintBottom_toBottomOf="@+id/etPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tilEmail"
         app:passwordToggleEnabled="true"
         app:passwordToggleTint="@color/black">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Password"
-            android:inputType="textPassword"
-            android:maxLines="1"
-            android:textColorHint="@color/dark_blue"
-            app:endIconMode="password_toggle" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/bSignUp"
-        android:layout_width="0dp"
+        android:layout_width="98dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginTop="30dp"
         android:background="@color/green"
         android:backgroundTint="#00897B"
         android:text="Sign up"
         android:textAllCaps="false"
-        android:textColor="@color/green"
+        android:textColor="#1B5E20"
         android:textColorHighlight="#20C827"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tilPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
 
     <TextView
         android:id="@+id/tvHaveAnAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
         android:text="Already have an account?"
         android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/tvSignIn"
+        app:layout_constraintEnd_toEndOf="@+id/bSignUp"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/tvSignIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="23dp"
-        android:layout_marginTop="29dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="66dp"
         android:text="Sign in."
         android:textColor="@color/dark_blue"
         android:textStyle="bold"
@@ -153,27 +118,69 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="26dp"
+        android:layout_marginStart="146dp"
         android:text="SIGN UP"
         android:textColor="#1533EF"
         android:textColorHighlight="#0C27CC"
         android:textColorHint="#1431E3"
         android:textColorLink="#0828EF"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="144dp"
-        android:layout_height="78dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginBottom="58dp"
-        app:layout_constraintBottom_toBottomOf="@+id/tvAlmostThere"
+        android:layout_width="100dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvExcited"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:srcCompat="@drawable/applogo" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:minHeight="48dp"
+        android:textColorHint="@color/dark_blue"
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:textColorHint="@color/dark_blue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/applogo" />
+        app:layout_constraintTop_toBottomOf="@+id/etUsername" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etUsername"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:hint="Username"
+        android:inputType="text"
+        android:maxLines="1"
+        android:minHeight="48dp"
+        android:textColorHighlight="#3949AB"
+        android:textColorHint="#2842E4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAlmostThere" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

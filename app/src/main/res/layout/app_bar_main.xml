@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signpic"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.MindBriz.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light_blue"
+            app:popupTheme="@style/Theme.MindBriz.PopupOverlay" />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include
+        layout="@layout/content_main"
+        android:layout_width="match_parent"
+        android:layout_height="659dp"
+        app:layout_anchor="@+id/txtanger"
+        app:layout_anchorGravity="center" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_marginBottom="16dp"
+        app:srcCompat="@android:drawable/ic_dialog_email"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextText5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:text="@string/bringing_peace_of_mind_to_your_conscious"
+        android:textStyle="bold"
+        app:layout_anchor="@+id/appBarLayout"
+        app:layout_anchorGravity="center"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvtsuicide"
+        android:layout_width="216dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="100dp"
+        android:text="Are you having suicidal thought?" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtstressed"
+        android:layout_width="216dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="200dp"
+        android:text="Feeling Stressed?" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtanger"
+        android:layout_width="216dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginVertical="300dp"
+        android:text="Are you burning with Anger?" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtocd"
+        android:layout_width="357dp"
+        android:layout_height="22dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginVertical="400dp"
+        android:text="The best way to deal with obsessive compulsive disorder" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtanxiety"
+        android:layout_width="258dp"
+        android:layout_height="27dp"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginVertical="500dp"
+        android:text="Helping you through with Anxiety" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtselfharm"
+        android:textColor="@color/light_blue"
+        android:layout_width="258dp"
+        android:layout_height="27dp"
+        android:layout_marginHorizontal="70dp"
+        android:layout_marginVertical="550dp"
+        android:text="A sure approach to overcome self harm" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
